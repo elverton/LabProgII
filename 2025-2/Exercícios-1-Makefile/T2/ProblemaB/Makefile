@@ -1,8 +1,8 @@
 # O nome do executável final
-TARGET = sistema_bancario
+TARGET = produto
 
 # Os arquivos-objeto necessários para criar o executável
-OBJS = main.o ContaBancaria.o
+OBJS = main.o Produto.o
 
 # O compilador que será usado
 CC = gcc
@@ -20,17 +20,17 @@ $(TARGET): $(OBJS)
 
 # Regra para compilar o arquivo main.c em main.o
 # Depende de main.c
-main.o: main.c
+main.o: main.c 
 	$(CC) $(CFLAGS) -c main.c
 
-# Regra para compilar o arquivo ContaBancaria.c em ContaBancaria.o
-# Depende de ContaBancaria.c e ContaBancaria.h
-ContaBancaria.o: ContaBancaria.c ContaBancaria.h
-	$(CC) $(CFLAGS) -c ContaBancaria.c
+# Regra para compilar o arquivo Produto.c em Produto.o
+# Depende de Produto.c e Produto.h
+Produto.o: Produto.c Produto.h
+	$(CC) $(CFLAGS) -c Produto.c
 
 # Regra 'run': executa o programa
 run: $(TARGET)
-	./$(TARGET)
+	./$(TARGET) < entrada.txt
 
 # Regra 'clean': remove todos os arquivos compilados (objetos e executável)
 clean:
