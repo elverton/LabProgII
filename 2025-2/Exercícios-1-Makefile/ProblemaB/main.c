@@ -9,6 +9,7 @@ int main() {
 
     // Testando a criação da conta
     scanf("%d", &numero);
+    getchar();
     scanf("%s", titular);
     criarConta(&minhaConta, numero, titular);
     imprimirInfo(&minhaConta);
