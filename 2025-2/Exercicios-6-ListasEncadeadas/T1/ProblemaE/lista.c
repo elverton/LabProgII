@@ -34,22 +34,6 @@ void Retira(TipoApontador p, TipoLista *Lista, TipoItem *Item)
   free(q);
 }
 
-int Tamanho(TipoLista *Lista)
-{
-    TipoApontador Aux;
-    int contador = 0;
-    
-    Aux = Lista->Primeiro->Prox;  // Acessa através do ponteiro usando ->
-    
-    while (Aux != NULL)
-    {
-        contador++;
-        Aux = Aux->Prox;
-    }
-    
-    return contador;
-}
-
 void ImprimeInvertido(TipoLista *Lista)
 {
 	// ESCREVA SUA LÓGICA AQUI
