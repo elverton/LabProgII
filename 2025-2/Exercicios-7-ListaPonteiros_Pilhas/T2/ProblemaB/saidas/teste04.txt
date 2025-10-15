@@ -1,0 +1,4 @@
+Elemento 15 desempilhado
+Elemento 0 desempilhado
+Elemento -20 desempilhado
+Elemento -10 desempilhado
