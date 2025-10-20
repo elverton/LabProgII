@@ -10,7 +10,7 @@ Matriz* criaMatriz(int linhas, int colunas) {
     m->num_colunas = colunas;
     
     // Aloca espaço para todos os elementos (linhas * colunas)
-    m->matriz = (int*)malloc(linhas * colunas, sizeof(int));
+    m->matriz = (int*)calloc(linhas * colunas, sizeof(int));
     
     return m;
 }

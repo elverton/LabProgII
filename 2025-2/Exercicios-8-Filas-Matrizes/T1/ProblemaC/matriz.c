@@ -9,7 +9,7 @@ Matriz* criaMatriz(int dimensao) {
     m->dimensao = dimensao;
     
     int num_elementos = (dimensao * (dimensao + 1)) / 2;
-    m->matriz = (int*)malloc(num_elementos, sizeof(int));
+    m->matriz = (int*)calloc(num_elementos, sizeof(int));
     
     return m;
 }
