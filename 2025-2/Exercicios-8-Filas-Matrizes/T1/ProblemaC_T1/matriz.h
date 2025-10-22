@@ -1,7 +1,7 @@
 #ifndef MATRIZ_H
 #define MATRIZ_H
 
-// Definição da estrutura Matriz Triangular Superior 
+// Definição da estrutura Matriz Triangular Inferior
 typedef struct matriz {
     int *matriz;      // ponteiro para o vetor que armazena os elementos
     int dimensao;     // dimensão da matriz quadrada (n x n)

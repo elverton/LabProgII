@@ -10,7 +10,7 @@ int main() {
     Matriz *m = criaMatriz(dimensao);
     
     for (int i = 0; i < dimensao; i++) {
-        for (int j = i; j < dimensao; j++) {  
+        for (int j = 0; j <= i; j++) {  
             scanf("%d", &valor);
             atualizaElemento(m, i, j, valor);
         }
